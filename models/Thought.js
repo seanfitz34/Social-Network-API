@@ -21,13 +21,7 @@ const ReactionSchema = new Schema(
       required: true,
     },
 
-    createdAt: {
-      type: Date,
-      // Set default value to the current timestamp
-      default: Date.now,
-      // Use a getter method to format the timestamp on query
-      get: (timestamp) => dateFormat(timestamp),
-    },
+   
   },
   {
     toJSON: {
